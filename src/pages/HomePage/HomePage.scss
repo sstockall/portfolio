@@ -1,0 +1,40 @@
+@use '../../styles/global.scss' as *;
+@use '../../styles/partials/mixins.scss' as *;
+@use '../../styles/partials/variables.scss' as *;
+
+.main {
+    background-color: $background-main ;
+    height: 100vh;
+    display: flex;
+    padding: 1rem;
+
+    &__sidebar {
+      width: 50%;
+    }
+
+    &__content {
+       width: 50%;
+    }
+
+    &__header {
+        color: $text;
+    }
+
+    &__text {
+        color: $text;
+    }
+
+    &__learn-more {
+        margin: 2rem 0;
+
+        @include tablet {
+            display: none;
+        }
+    //     box-shadow: 
+    //         0 0 60px 10px #fff,  /* inner white */
+    //         0 0 100px 20px $accent, /* middle magenta */
+    //         0 0 140px 30px $background-secondary;
+    // 
+    }
+
+}

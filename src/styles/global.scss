@@ -1,0 +1,17 @@
+@use './partials/mixins.scss' as *;
+@use './partials/variables.scss' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cairo';
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
