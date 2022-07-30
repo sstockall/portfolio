@@ -2,7 +2,7 @@
 @use '../../styles/partials/mixins.scss' as *;
 @use '../../styles/partials/variables.scss' as *;
 
-.about {
+.projects {
     position: fixed;
     top: 0;
     left: 0;
@@ -25,7 +25,6 @@
         padding: 1rem;
         border: 1px solid black;
         border-radius: 5px;
-        animation: scale-in-tl 1s;
         display: flex;
     }
 
@@ -33,29 +32,6 @@
         width: 2rem;
         position: absolute;
         right: 1rem;
-    }
-    
-    &__profile {
-        padding: 1rem;
-      
-        &--pic {
-            width: 17rem;
-            border-radius: 5px;
-            border: 1px solid $accent;
-        }
-    }
-
-    &__bio {
-        padding: 1rem;
-    }
-    
-    &__bio-header {
-
-    }
-    
-    &__bio-text {
-        font-size: 1.4rem;
-
     }
 }
 

@@ -2,39 +2,93 @@
 @use '../../styles/partials/mixins.scss' as *;
 @use '../../styles/partials/variables.scss' as *;
 
-.main {
+.home {
     background-color: $background-main ;
     height: 100vh;
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 1rem;
+    position: relative;
 
-    &__sidebar {
-      width: 50%;
+    &__main {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    &__content {
-       width: 50%;
+    &__main-avatar {
+        width: 5rem;
+        height: 5rem;
     }
 
-    &__header {
+    &__main-header {
+        font-size: 4rem;
         color: $text;
+        text-align: center;
     }
 
-    &__text {
+    &__main-text {
+        font-size: 2rem;
         color: $text;
+        text-align: center;
+        width: 50%;
     }
 
-    &__learn-more {
-        margin: 2rem 0;
+    &__navs {
 
-        @include tablet {
-            display: none;
+        &--about {
+            position: absolute;
+            left: 2rem;
+            top: 1.5rem;
+
+            &:hover {
+                cursor: pointer;
+                text-shadow: 0 0 20px #fff, 0 0 30px $accent, 0 0 40px $accent, 0 0 50px $accent, 0 0 60px $accent, 0 0 70px $accent, 0 0 80px $accent;
+            }
         }
-    //     box-shadow: 
-    //         0 0 60px 10px #fff,  /* inner white */
-    //         0 0 100px 20px $accent, /* middle magenta */
-    //         0 0 140px 30px $background-secondary;
-    // 
+
+        &--projects {
+            position: absolute;
+            right: 2rem;
+            top: 1rem;
+
+            &:hover {
+                cursor: pointer;
+                text-shadow: 0 0 20px #fff, 0 0 30px $accent, 0 0 40px $accent, 0 0 50px $accent, 0 0 60px $accent, 0 0 70px $accent, 0 0 80px $accent;
+            }
+        }
+
+        &--skills {
+            position: absolute;
+            left: 2rem;
+            bottom: 1rem;
+
+            &:hover {
+                cursor: pointer;
+                text-shadow: 0 0 20px #fff, 0 0 30px $background-secondary, 0 0 40px $background-secondary, 0 0 50px $background-secondary, 0 0 60px $background-secondary, 0 0 70px $background-secondary, 0 0 80px $background-secondary;
+            }
+        }
+
+        &--contact {
+            position: absolute;
+            right: 2rem;
+            bottom: 1rem;
+
+            &:hover {
+                cursor: pointer;
+                text-shadow: 0 0 20px #fff, 0 0 30px $accent, 0 0 40px $accent, 0 0 50px $accent, 0 0 60px $accent, 0 0 70px $accent, 0 0 80px $accent;
+            }
+        }
     }
 
+    &__navs-item {
+        font-size: 1.7rem;
+        color: $text;
+    }
 }
+
