@@ -1,5 +1,5 @@
 import './ProjectsModal.scss';
-import close from '../../assets/icons/close.svg';
+import close from '../../assets/icons/white-x.png';
 
 function ProjectsModal({ show, toggleModal }) {
     return ( 

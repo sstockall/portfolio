@@ -19,19 +19,43 @@
 
     &__main {
         position: relative;
-        background-color: $accent;
+        background-color: #222;
         width: 95%;
-        height: 90%;
+        height: 95%;
         padding: 1rem;
         border: 1px solid black;
         border-radius: 5px;
         display: flex;
+        animation: bottomleft 1s;
     }
 
     &__close {
         width: 2rem;
         position: absolute;
         right: 1rem;
+    }
+
+    &__creds {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__header {
+        
+    }
+    
+    &__education {
+    
+    }
+
+    &__experience {
+   
+    }
+
+    &__interests {
+
     }
 }
 

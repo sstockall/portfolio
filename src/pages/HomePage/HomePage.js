@@ -28,21 +28,21 @@ function HomePage() {
                 </p>
             </section>
             <section className='home__navs'>
-                <div className='home__navs-item home__navs--about' onClick={() => toggleModal(about, setAbout)}>
+                <div className='home__navs-item home__navs--about'>
                     <AboutModal show={about} toggleModal={() => toggleModal(about, setAbout)} />
-                    ABOUT
+                    <h6 className='home__navs-span' onClick={() => toggleModal(about, setAbout)}>ABOUT</h6>
                 </div>
-                <div className='home__navs-item home__navs--projects' onClick={() => toggleModal(projects, setProjects)}>
+                <div className='home__navs-item home__navs--projects'>
                     <ProjectsModal show={projects} toggleModal={() => toggleModal(projects, setProjects)} />
-                    PROJECTS
+                    <h6 className='home__navs-span' onClick={() => toggleModal(projects, setProjects)}>PROJECTS</h6>
                 </div>
-                <div className='home__navs-item home__navs--skills' onClick={() => toggleModal(skills, setSkills)}>
+                <div className='home__navs-item home__navs--skills'>
                     <SkillsModal show={skills} toggleModal={() => toggleModal(skills, setSkills)} />
-                    SKILLS
+                    <h6 className='home__navs-span' onClick={() => toggleModal(skills, setSkills)}>SKILLS</h6>
                 </div>
-                <div className='home__navs-item home__navs--contact' onClick={() => toggleModal(contact, setContact)}>
+                <div className='home__navs-item home__navs--contact'>
                     <ContactModal show={contact} toggleModal={() => toggleModal(contact, setContact)} />
-                    CONTACT
+                    <h6 className='home__navs-span' onClick={() => toggleModal(contact, setContact)}>CONTACT</h6>
                 </div>
             </section>
         </main>

@@ -19,13 +19,14 @@
 
     &__main {
         position: relative;
-        background-color: $accent;
+        background-color: #222;
         width: 95%;
-        height: 90%;
+        height: 95%;
         padding: 1rem;
         border: 1px solid black;
         border-radius: 5px;
         display: flex;
+        animation: topright 1s;
     }
 
     &__close {

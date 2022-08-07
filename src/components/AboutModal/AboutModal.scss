@@ -19,29 +19,52 @@
 
     &__main {
         position: relative;
-        background-color: $accent;
+        background-color: #222;
         width: 95%;
-        height: 90%;
+        height: 95%;
         padding: 1rem;
         border: 1px solid black;
         border-radius: 5px;
-        animation: scale-in-tl 1s;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        animation: topleft 1s;
+        overflow: auto;
+    }
+
+    &__upper {
+        z-index: 30;
+        display: flex;
+        padding: 2rem 0 3rem 0;
+        border-bottom: 1px solid $text;
+        border-top: 1px solid $text;
     }
 
     &__close {
         width: 2rem;
         position: absolute;
-        right: 1rem;
+        right: 0.5rem;
+        top: 0.5rem;
+        background-color: none;
     }
     
     &__profile {
-        padding: 1rem;
+        float: left;
+        padding-top: 1.5rem;
+        position: relative;
       
         &--pic {
             width: 17rem;
             border-radius: 5px;
-            border: 1px solid $accent;
+        }
+
+        &--overlay {
+            position: absolute;
+            height: 90%;
+            width: 100%;
+            top: 1.5rem;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.4);
         }
     }
 
@@ -50,7 +73,7 @@
     }
     
     &__bio-header {
-
+        font-size: 2rem;
     }
     
     &__bio-text {

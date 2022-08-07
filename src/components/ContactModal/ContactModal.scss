@@ -19,19 +19,118 @@
 
     &__main {
         position: relative;
-        background-color: $accent;
+        background-color: #222;
         width: 95%;
-        height: 90%;
+        height: 95%;
         padding: 1rem;
         border: 1px solid black;
         border-radius: 5px;
         display: flex;
+        animation: bottomright 1s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     &__close {
         width: 2rem;
         position: absolute;
         right: 1rem;
+        top: 1rem;
+    }
+
+    &__header {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 75%;
+    }
+
+    &__links {
+        background-color: black;
+        padding: 1rem;
+        margin: 1rem; 
+        padding-right: 2rem;
+        width: 45%;
+    }
+
+    &__links-title {
+        margin-left: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1.5rem;
+        text-align: center;
+        border-bottom: 1px solid $text;
+    }
+    
+    &__links-item {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem; 
+    }
+
+    &__links-header {
+        padding-bottom: 0.5rem;
+        font-size: 1.3rem;
+    }
+
+    &__links-content {
+        display: flex;
+        align-items: center;
+    }
+
+    &__links-img {
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-right: 0.5rem;
+    }
+
+    &__links-link {
+        font-size: 1.2rem;
+        color: $background-secondary;
+    }
+
+    &__form {
+        background-color: black;
+        padding: 1rem;
+        margin: 1rem;
+        width: 45%;
+    }
+   
+    &__form-header {
+        border-bottom: 1px solid $text;
+         margin-left: 1rem;
+        font-size: 1.5rem;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    &__form-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__form-field {
+        position: relative;
+        margin: 1rem;
+        margin-bottom: 1.5rem;
+        width: 90%;
+    }
+
+    &__form-button {
+        margin-left: 1rem;
+        padding: 0.6rem 1rem;
+        background-color: $background-main;
+        color: $text;
+        border: none;
+        border-radius: 2px;
+        width: 80%;
     }
 }
 
@@ -42,4 +141,45 @@
 
 .display-none {
     display: none;
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    color: $text;
+    background-color: black;
+    border-bottom: 1px solid $text;
+    border-radius: 2px;
+    width: 80%;
+
+    &:focus + label {
+        transform: translate(-0.5rem, -1rem) scale(.75);
+        text-shadow:
+        0 0 10px $accent,
+        0 0 10px $accent,
+        0 0 21px $accent;
+    }
+}
+
+textarea {
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    color: $text;
+    background-color: black;
+    border-bottom: 1px solid $text;
+    width: 80%;
+
+    &:focus + label {
+        transform: translate(-0.5rem, 0rem) scale(.75);
+    }
+}
+
+label {
+    position: absolute;
+    left: 0;
+    color: $text;
+    transform: translate(0, 16px) scale(1);
+    transition: all .1s ease-in-out;
 }
