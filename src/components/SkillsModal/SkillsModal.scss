@@ -43,19 +43,85 @@
 
     &__creds {
         padding: 1rem;
-        
+        display: flex;
+        justify-content: space-between;
     }
     
+    &__section {
+        background-color: black;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    &__section-header {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0.5rem;
+    }
+
+    &__section-img {
+        width: 1.2rem;
+        margin-left: 0.5rem;
+        height: 1.1rem;
+    }
+
     &__education {
-    
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid $text;
+        padding-top: 0.5rem;
+    }
+
+    &__ed-header {
+        margin-bottom: 0.5rem;
     }
 
     &__experience {
-   
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid $text;
+        padding-top: 1rem;
     }
 
-    &__interests {
+    &__ed-img {
+        width: 1rem;
+        margin-right: 0.5rem;
+    }
 
+
+    &__ed-descrip {
+        font-size: 0.9rem;
+        margin: 0.5rem 0;
+    }
+
+    &__exp-header {
+        margin-bottom: 0.5rem;
+    }
+
+
+    &__exp-img {
+        width: 1rem;
+        margin-right: 0.5rem;
+    }
+
+
+    &__exp-descrip {
+        font-size: 0.9rem;
+        margin: 0.5rem 0;
+    }
+
+    &__skills {
+        border-top: 1px solid $text;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__skills-img {
+        width: 30%;
+        margin: 0.5rem 1rem;
     }
 }
 
