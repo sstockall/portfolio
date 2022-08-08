@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: auto;
 
     &:hover {
         text-shadow: none;
@@ -27,17 +28,12 @@
         border-radius: 5px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         animation: topleft 1s;
         overflow: auto;
     }
 
-    &__upper {
-        z-index: 30;
-        display: flex;
-        padding: 2rem 0 3rem 0;
-        border-bottom: 1px solid $text;
-        border-top: 1px solid $text;
+    &__header {
+        @include header;
     }
 
     &__close {
@@ -46,14 +42,39 @@
         right: 0.5rem;
         top: 0.5rem;
         background-color: none;
+
+        &:hover {
+            cursor: pointer;;
+        }
+    }
+
+    &__bio {
+        z-index: 30;
+        display: flex;
+        padding: 2rem 2rem 3rem 2rem;
+        border-bottom: 1px solid $text;
+        border-top: 1px solid $text;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    &__bio-header {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    &__bio-lower {
+        display: flex;
+        flex-direction: row-reverse;
     }
     
-    &__profile {
+    &__bio-pic {
         float: left;
         padding-top: 1.5rem;
         position: relative;
       
-        &--pic {
+        &--img {
             width: 17rem;
             border-radius: 5px;
         }
@@ -64,21 +85,41 @@
             width: 100%;
             top: 1.5rem;
             left: 0;
-            background-color: rgba(0, 0, 0, 0.4);
+            background-color: rgba(0, 0, 0, 0.2);
         }
     }
 
-    &__bio {
+    &__bio-content {
         padding: 1rem;
     }
     
-    &__bio-header {
-        font-size: 2rem;
-    }
-    
     &__bio-text {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+    }
 
+    &__bio-button {
+        margin-top: 3rem;
+        padding: 0.5rem 1rem;
+        text-transform: uppercase;
+
+        &:hover {
+            @include box-shadow;    
+        }
+    }
+
+    
+    &__bio-resume {
+
+    }
+
+    &__interests {
+
+    }
+
+    &__interests-header {
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 1.5rem;
     }
 }
 

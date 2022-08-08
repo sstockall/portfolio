@@ -36,6 +36,25 @@
     font-weight: 600;
 }
 
+@mixin box-shadow {
+    box-shadow: 
+    0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem $accent,
+    0 0 0.8rem $accent,
+    0 0 2.8rem $accent,
+    inset 0 0 1.3rem $accent; 
+    border: none;
+    cursor: pointer;
+    color: $text;
+}
+
+@mixin header {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
 @keyframes flicker-in-1{
     0%{opacity:0};
     10%{opacity:0};

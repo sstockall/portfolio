@@ -27,6 +27,8 @@
         border-radius: 5px;
         display: flex;
         animation: bottomleft 1s;
+        display: flex;
+        flex-direction: column;
     }
 
     &__close {
@@ -35,14 +37,12 @@
         right: 1rem;
     }
 
+    &__header {
+        @include header; 
+     }
+
     &__creds {
         padding: 1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    &__header {
         
     }
     
