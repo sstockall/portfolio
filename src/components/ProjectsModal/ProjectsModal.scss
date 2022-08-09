@@ -26,13 +26,78 @@
         border: 1px solid black;
         border-radius: 5px;
         display: flex;
+        flex-direction: column;
         animation: topright 1s;
+    }
+
+    &__header {
+        @include header;
+        margin-bottom: 1rem;
     }
 
     &__close {
         width: 2rem;
         position: absolute;
         right: 1rem;
+    }
+
+    &__lower {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid $text;
+        padding-top: 1rem;
+    }
+
+    &__project {
+        border: 1px solid $text;
+        display: flex;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 3px;
+        background-color: rgba(255, 254, 253, 0.2);
+    }
+
+    &__project-snap {
+        width: 35%;
+        box-shadow: 0px 2px 5px rgba(19, 24, 44, 0.7);
+        border-radius: 2px;
+    }
+
+    &__project-text {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1rem;
+    }
+
+    &__project-header {
+        
+    }
+
+    &__project-stack {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+
+        &--purple {
+            color: darkblue;
+        }
+    }
+
+    &__project-des {
+        font-size: 0.9rem;
+        margin-left: 1rem;
+    }
+}
+
+.mim {
+    background-color: rgba(255, 254, 253, 0.2);
+
+    &__letter {
+        font-family: 'Montserrat';
+        color: #13182C;
+        text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.5);
+        font-size: 2rem;
     }
 }
 

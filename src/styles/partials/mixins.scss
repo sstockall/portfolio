@@ -36,6 +36,12 @@
     font-weight: 600;
 }
 
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../assets/fonts/Montserrat-Regular.ttf') format("truetype");
+    font-weight: 400;
+}
+
 @mixin box-shadow {
     box-shadow: 
     0 0 .2rem #fff,

@@ -36,7 +36,7 @@ function SkillsModal({ show, toggleModal }) {
                                 2022
                             </span>
                             <span className='skills__ed-descrip'>
-                                Developed proficiency in effficienct, full stack, responsive web development and programming. Primary language used was Javascript, frameworks included REACT.js and NODE.js.
+                                Developed proficiency in efficient, full stack, responsive web development and programming. Primary language used was Javascript, frameworks included REACT.js and NODE.js.
                             </span>
                             <span className='skills__ed-descrip'>
                                 4.0 GPA
