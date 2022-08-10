@@ -42,17 +42,36 @@
     font-weight: 400;
 }
 
-@mixin box-shadow {
-    box-shadow: 
-    0 0 .2rem #fff,
-    0 0 .2rem #fff,
-    0 0 2rem $accent,
-    0 0 0.8rem $accent,
-    0 0 2.8rem $accent,
-    inset 0 0 1.3rem $accent; 
+@mixin button {
     border: none;
     cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-family: '3270';
+    border-radius: 3px;
+    background-color: $background-main;
     color: $text;
+    font-size: 1rem;
+
+    &:hover {
+        box-shadow: 
+        0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem $accent,
+        0 0 0.8rem $accent,
+        0 0 2.8rem $accent,
+        inset 0 0 1.3rem $accent; 
+        background-color: $text;
+        color: lightgray;
+    }
+}
+
+@mixin box-shadow {
+    box-shadow: 
+        0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem $accent,
+        0 0 0.8rem $accent,
+        0 0 2.8rem $accent,
 }
 
 @mixin header {
@@ -95,40 +114,38 @@
     100%{opacity:1};
 }
 
-@keyframes scale-in-tl {
-    0%{
-        transform: scale(0.5);
-        transform-origin: top left;
-    }
-    100%{
-        transform: scale(1)
-    };
-}
-
 @keyframes topleft {
     0% {
-        transform:scale(0,0);
-        transform-origin:0 0;
+        transform:scale(1%,0);
+        transform-origin:top left;
         opacity:1
     }
-
+    50% {
+        transform:scale(100%,1%);
+        transform-origin:top left;
+        opacity:1
+    }
     100% {
         transform:scale(100%,100%);
-        transform-origin:0 0;
+        transform-origin:top left;
         opacity:1
     }
 }
 
 @keyframes topright {
     0% {
-        transform:scale(0,0);
+        transform:scale(0,1%);
         transform-origin:top right;
         opacity:1
     }
-
+    50% {
+        transform:scale(100%,1%);
+        transform-origin:top right;
+        opacity:1
+    }
     100% {
         transform:scale(100%,100%);
-        transform-origin:0 0;
+        transform-origin:top right;
         opacity:1
     }
 }
@@ -136,13 +153,17 @@
 @keyframes bottomleft {
     0% {
         transform:scale(0,0);
-        transform-origin: 10% 110%;
+        transform-origin: bottom left;
         opacity:1
     }
-
+    50% {
+        transform:scale(100%,1%);
+        transform-origin:bottom left;
+        opacity:1
+    }
     100% {
         transform:scale(100%,100%);
-        transform-origin:0 0;
+        transform-origin: bottom left;
         opacity:1
     }
 }
@@ -150,13 +171,17 @@
 @keyframes bottomright {
     0% {
         transform:scale(0,0);
-        transform-origin:100% 100%;
+        transform-origin:bottom right;
         opacity:1
     }
-
+    50% {
+        transform:scale(100%,1%);
+        transform-origin: bottom right;
+        opacity:1
+    }
     100% {
         transform:scale(100%,100%);
-        transform-origin:0 0;
+        transform-origin: bottom right;
         opacity:1
     }
 }

@@ -18,7 +18,6 @@ function AboutModal({ show, toggleModal }) {
                     <div className='about__bio-lower'>
                         <div className='about__bio-pic'>
                             <img className='about__bio-pic--img' src={profile} alt='profile' />
-                            <div className='about__bio-pic--overlay'></div>
                         </div>
                         <div className='about__bio-content'>
                             <p className='about__bio-text'>
@@ -29,9 +28,6 @@ function AboutModal({ show, toggleModal }) {
                         </div>
                     </div>
                 </div>
-                {/* <div className='about__interests'>
-                    <h3 className='about__interests-header'>Interests</h3>
-                </div> */}
             </div>
         </section>
      );

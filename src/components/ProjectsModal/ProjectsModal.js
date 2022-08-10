@@ -1,13 +1,14 @@
 import './ProjectsModal.scss';
 import close from '../../assets/icons/white-x.png';
 import mimSnap from '../../assets/images/mim-snap.png';
+import instockSnap from '../../assets/images/instock-snap.png';
 
 function ProjectsModal({ show, toggleModal }) {
     
     return ( 
         <section className={show ? 'projects display-flex' : 'projects display-none'}>
             <div className='projects__main'>
-                <h2 className='projects__header'>Stuff I've Done</h2>
+                <h2 className='projects__header'>My Works</h2>
                 <img className='projects__close' src={close} alt='close' onClick={toggleModal}/>
                 <div className='projects__lower'>
                     <div className='projects__project mim'>
@@ -38,9 +39,13 @@ function ProjectsModal({ show, toggleModal }) {
                                 <li>Uses SQL as database, and Cloudinary for image storage and persistence for record photos</li>
                             </ul>
                         </div>
+                        <div className='projects__project-buttons'>
+                            <a href='https://github.com/sstockall/MIM-client' target='_blank'><button className='projects__project-button'>Repo</button></a>
+                            <a href='https://moles-in-motion.herokuapp.com/' target='_blank'><button className='projects__project-button'>Live</button></a>
+                        </div>
                     </div>
                     <div className='projects__project instock'>
-                        <img className='projects__project-snap' src={mimSnap} alt='mim' />
+                        <img className='projects__project-snap' src={instockSnap} alt='mim' />
                         <div className='projects__project-text'>
                             <h3 className='projects__project-header'>InStock</h3>
                             <p className='projects__project-stack'>
@@ -63,6 +68,9 @@ function ProjectsModal({ show, toggleModal }) {
                                 <li>Collaborative project including 2 other developers</li>
                                 <li>Full CRUD operation range</li>
                             </ul>
+                        </div>
+                        <div className='projects__project-buttons'>
+                            <a href='https://github.com/estebanchos/instock-client' target='_blank'><button className='projects__project-button'>Repo</button></a>
                         </div>
                     </div>
                 </div>

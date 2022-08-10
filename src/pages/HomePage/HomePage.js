@@ -24,7 +24,7 @@ function HomePage() {
                     hi! I'm SAMANTHA
                     <img className='home__main-avatar' src={avatar} alt='avatar' />
                     </h1>
-                <p className='home__main-text'>A full stack developer 💻  with a passion for sustainability and climate positive action🌱 
+                <p className='home__main-text'>A full stack developer 💻  <br/> with a passion for sustainability <br /> and climate positive action🌱 
                 </p>
             </section>
             <section className='home__navs'>

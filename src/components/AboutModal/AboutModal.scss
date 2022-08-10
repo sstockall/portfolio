@@ -28,8 +28,9 @@
         border-radius: 5px;
         display: flex;
         flex-direction: column;
-        animation: topleft 1s;
         overflow: auto;
+        transition: transform 2s;
+        animation: topleft 1s;
     }
 
     &__header {
@@ -51,7 +52,7 @@
     &__bio {
         z-index: 30;
         display: flex;
-        padding: 2rem 2rem 3rem 2rem;
+        padding: 2rem;
         border-bottom: 1px solid $text;
         border-top: 1px solid $text;
         display: flex;
@@ -70,22 +71,12 @@
     }
     
     &__bio-pic {
-        float: left;
-        padding-top: 1.5rem;
+        padding-top: 1rem;
         position: relative;
       
         &--img {
             width: 17rem;
             border-radius: 5px;
-        }
-
-        &--overlay {
-            position: absolute;
-            height: 90%;
-            width: 100%;
-            top: 1.5rem;
-            left: 0;
-            background-color: rgba(0, 0, 0, 0.2);
         }
     }
 
@@ -98,28 +89,8 @@
     }
 
     &__bio-button {
-        margin-top: 3rem;
-        padding: 0.5rem 1rem;
-        text-transform: uppercase;
-
-        &:hover {
-            @include box-shadow;    
-        }
-    }
-
-    
-    &__bio-resume {
-
-    }
-
-    &__interests {
-
-    }
-
-    &__interests-header {
-        font-size: 2rem;
-        text-align: center;
-        padding-top: 1.5rem;
+        @include button;
+        margin-top: 2rem;
     }
 }
 

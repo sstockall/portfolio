@@ -29,6 +29,7 @@
         animation: bottomleft 1s;
         display: flex;
         flex-direction: column;
+        overflow: auto;
     }
 
     &__close {
@@ -42,9 +43,11 @@
      }
 
     &__creds {
-        padding: 1rem;
+        padding: 2rem 1rem;
         display: flex;
         justify-content: space-between;
+        border-top: 1px solid $text;
+        border-bottom: 1px solid $text;
     }
     
     &__section {

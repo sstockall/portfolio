@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: auto;
 
     &:hover {
         text-shadow: none;
@@ -39,6 +40,10 @@
         width: 2rem;
         position: absolute;
         right: 1rem;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     &__lower {
@@ -47,16 +52,18 @@
         justify-content: space-between;
         align-items: center;
         border-top: 1px solid $text;
-        padding-top: 1rem;
+        border-bottom: 1px solid $text;
+        padding: 1rem 0;
     }
 
     &__project {
-        border: 1px solid $text;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 254, 253, 0.2);
         display: flex;
+        justify-content: space-between;
         padding: 1rem;
         margin: 1rem 0;
         border-radius: 3px;
-        background-color: rgba(255, 254, 253, 0.2);
     }
 
     &__project-snap {
@@ -80,7 +87,11 @@
         margin-bottom: 0.5rem;
 
         &--purple {
-            color: darkblue;
+            color: $text;
+            text-shadow:
+            0 0 10px $accent,
+            0 0 10px $accent,
+            0 0 21px $accent;
         }
     }
 
@@ -88,16 +99,15 @@
         font-size: 0.9rem;
         margin-left: 1rem;
     }
-}
 
-.mim {
-    background-color: rgba(255, 254, 253, 0.2);
+    &__project-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 
-    &__letter {
-        font-family: 'Montserrat';
-        color: #13182C;
-        text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.5);
-        font-size: 2rem;
+    &__project-button {
+        @include button;
     }
 }
 
