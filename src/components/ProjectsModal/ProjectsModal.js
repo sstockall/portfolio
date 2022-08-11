@@ -38,10 +38,10 @@ function ProjectsModal({ show, toggleModal }) {
                                 <li>Built using functional components and React hooks</li>
                                 <li>Uses SQL as database, and Cloudinary for image storage and persistence for record photos</li>
                             </ul>
-                        </div>
-                        <div className='projects__project-buttons'>
-                            <a href='https://github.com/sstockall/MIM-client' target='_blank'><button className='projects__project-button'>Repo</button></a>
-                            <a href='https://moles-in-motion.herokuapp.com/' target='_blank'><button className='projects__project-button'>Live</button></a>
+                            <div className='projects__project-buttons'>
+                                <a href='https://github.com/sstockall/MIM-client' target='_blank'><button className='projects__project-button'>Repo</button></a>
+                                <a href='https://moles-in-motion.herokuapp.com/' target='_blank'><button className='projects__project-button'>Live</button></a>
+                            </div>
                         </div>
                     </div>
                     <div className='projects__project instock'>
@@ -68,9 +68,9 @@ function ProjectsModal({ show, toggleModal }) {
                                 <li>Collaborative project including 2 other developers</li>
                                 <li>Full CRUD operation range</li>
                             </ul>
-                        </div>
-                        <div className='projects__project-buttons'>
-                            <a href='https://github.com/estebanchos/instock-client' target='_blank'><button className='projects__project-button'>Repo</button></a>
+                            <div className='projects__project-buttons'>
+                                <a href='https://github.com/estebanchos/instock-client' target='_blank'><button className='projects__project-button'>Repo</button></a>
+                            </div>
                         </div>
                     </div>
                 </div>

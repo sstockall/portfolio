@@ -29,6 +29,7 @@
         display: flex;
         flex-direction: column;
         animation: topright 1s;
+        overflow: auto
     }
 
     &__header {
@@ -60,7 +61,7 @@
         border: 1px solid rgba(255, 255, 255, 0.5);
         background-color: rgba(255, 254, 253, 0.2);
         display: flex;
-        justify-content: space-between;
+        
         padding: 1rem;
         margin: 1rem 0;
         border-radius: 3px;
@@ -79,12 +80,13 @@
     }
 
     &__project-header {
-        
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
     }
 
     &__project-stack {
-        font-size: 0.9rem;
-        margin-bottom: 0.5rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
 
         &--purple {
             color: $text;
@@ -96,18 +98,18 @@
     }
 
     &__project-des {
-        font-size: 0.9rem;
+        font-size: 1rem;
         margin-left: 1rem;
     }
 
     &__project-buttons {
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
     }
 
     &__project-button {
         @include button;
+        margin-top: 1rem;
+        margin-right: 1rem;
     }
 }
 

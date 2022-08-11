@@ -71,7 +71,7 @@ function SkillsModal({ show, toggleModal }) {
                                 <img className='skills__ed-img' src={calendarIcon} alt='cal' />
                                 2020-2022
                             </span>
-                            <span className='skills__ed-descrip'>
+                            <span className='skills__exp-descrip'>
                                 Skills Stengthened: Leadership, Problem-Solving, Time Management, Attention to detail
                             </span>
                         </div>
@@ -80,7 +80,7 @@ function SkillsModal({ show, toggleModal }) {
                                 Head Bartender - SIRCorp Restaurants
                             </h4>
                             <span className='skills__exp-date'>
-                                <img className='skills__ed-img' src={calendarIcon} alt='cal' />
+                                <img className='skills__exp-img' src={calendarIcon} alt='cal' />
                                 2013-2017
                             </span>
                             <span className='skills__exp-descrip'>
