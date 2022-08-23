@@ -7,6 +7,7 @@ import calendarIcon from '../../assets/icons/calendar.png';
 import htmlIcon from '../../assets/icons/html5.png';
 import cssIcon from '../../assets/icons/css.png';
 import jsIcon from '../../assets/icons/JS.png';
+import tsIcon from '../../assets/icons/typescript-icon.svg';
 import reactIcon from '../../assets/icons/react.png';
 import nodeIcon from '../../assets/icons/nodejs.svg';
 import sassIcon from '../../assets/icons/sass.svg';
@@ -97,12 +98,13 @@ function SkillsModal({ show, toggleModal }) {
                             <img className='skills__skills-img' src={htmlIcon} alt='html' />
                             <img className='skills__skills-img' src={cssIcon} alt='css' />
                             <img className='skills__skills-img' src={jsIcon} alt='js' />
+                            <img className='skills__skills-img skills__skills-img--adjust' src={tsIcon} alt='ts' />
                             <img className='skills__skills-img' src={reactIcon} alt='react' />
                             <img className='skills__skills-img' src={nodeIcon} alt='node' />
                             <img className='skills__skills-img' src={sassIcon} alt='sass' />
                             <img className='skills__skills-img' src={knexIcon} alt='knex' />
                             <img className='skills__skills-img' src={sqlIcon} alt='sql' />
-                            <img className='skills__skills-img' src={jwtIcon} alt='jwt' />
+                            <img className='skills__skills-img skills__skills-img--adjust' src={jwtIcon} alt='jwt' />
                             <img className='skills__skills-img' src={cloudinaryIcon} alt='cloud' />
                         </div>
                     </div>
